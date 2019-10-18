@@ -54,7 +54,7 @@
             </RelativeLayout>
 
             <EditText
-                android:id="@+id/editText"
+                android:id="@+id/editTextUsername"
                 android:layout_width="300dp"
                 android:layout_height="40dp"
                 android:layout_gravity="center_horizontal"
@@ -68,7 +68,7 @@
                 android:paddingEnd="10dp" />
 
             <EditText
-                android:id="@+id/editText2"
+                android:id="@+id/editTextPassword"
                 android:layout_width="300dp"
                 android:layout_height="40dp"
                 android:layout_gravity="center_horizontal"
@@ -116,7 +116,7 @@
                     android:clickable="true"
                     android:text="LOGIN"
                     android:textSize="18dp"
-                    android:textColor="@android:color/black" />
+                    android:textColor="@drawable/animation_ripple_text" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -130,10 +130,12 @@
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:height="30dp"
-                    android:background="#BEFFF7"
+                    android:background="@drawable/animation_ripple"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
                     android:text="Sign Up"
                     android:textSize="18dp"
-                    android:textColor="@android:color/black" />
+                    android:textColor="@drawable/animation_ripple_text" />
 
             </RelativeLayout>
 
@@ -143,13 +145,15 @@
                 android:layout_weight="1" >
 
                 <Button
+                    android:id="@+id/btnForgetpass"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:background="#00FFFFFF"
-                    android:text="Forget Password?"
-                    android:textColor="#FFF58F"
-                    android:textSize="15dp" />
+                    android:clickable="true"
+                    android:text="Forget Passwrod?"
+                    android:textSize="15dp"
+                    android:textColor="@drawable/animation_forgetpass" />
 
             </RelativeLayout>
 
