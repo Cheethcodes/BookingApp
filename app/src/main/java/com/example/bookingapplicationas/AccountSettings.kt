@@ -1,9 +1,9 @@
 package com.example.bookingapplicationas
 
 import android.os.Bundle
-import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 
+import kotlinx.android.synthetic.main.content_account_settings.*
 import kotlinx.android.synthetic.main.activity_account_settings.*
 
 class AccountSettings : AppCompatActivity() {

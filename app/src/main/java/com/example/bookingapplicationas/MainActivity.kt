@@ -15,7 +15,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        //setSupportActionBar(toolbar)
 
         imgbtnAccount.setOnClickListener() {
             val intent: Intent = Intent(this, AccountSettings::class.java)
@@ -23,7 +22,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         imgbtnBook.setOnClickListener() {
-
+            val intent: Intent = Intent(this, BookingPage::class.java)
+            startActivity((intent))
         }
 
         imgbtnMessage.setOnClickListener() {
